@@ -32,4 +32,4 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker build -t shubhambadade07/test:$BUILD_NUMBER .
-        docker push your-dockerhub-username/test:$BUILD_NUMBER
+        docker push shubhambadade07/test:$BUILD_NUMBER
