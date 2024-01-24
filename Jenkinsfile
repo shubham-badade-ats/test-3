@@ -11,6 +11,7 @@ pipeline {
         }
         stage("run script"){
             steps{
+
                 sh 'python script.py'
 
 
@@ -22,6 +23,6 @@ pipeline {
 
 
    
-    
+        }   
 }
 }
