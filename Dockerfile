@@ -7,6 +7,18 @@
 # FROM httpd:alpine3.15
 # WORKDIR /usr/local/apache2/htdocs
 # COPY --from=angular /app/dist/test .
+
+
+# FROM node:latest AS builder
+# COPY . ./test-a-application
+# WORKDIR /test-a-application
+# RUN npm i
+# RUN npm run build --prod
+
+# FROM nginx:1.15.8-alpine
+# COPY --from=builder /test-a-application/dist/test/ /usr/share/nginx/html
+
+
 FROM node:latest
 WORKDIR /app
 COPY . .
