@@ -60,13 +60,13 @@ def main():
     image_name = "docker-test"
 
     # Remove the existing Docker image
-    remove_old_image("shubhambadade07/newtest")
+    remove_old_image("shubhambadade07/new-test")
 
     # Pull the latest version of the Docker image
-    pull_latest_image("shubhambadade07/newtest")
+    pull_latest_image("shubhambadade07/new-test")
 
     # Run a container from the updated image
-    run_container("shubhambadade07/newtest")
+    run_container("shubhambadade07/new-test")
 
 if __name__ == "__main__":
     main()
