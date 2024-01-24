@@ -60,13 +60,13 @@ def main():
     image_name = "docker-test"
 
     # Remove the existing Docker image
-    remove_old_image("jenkinsci/blueocean")
+    remove_old_image("shubhambadade07/newtest")
 
     # Pull the latest version of the Docker image
-    pull_latest_image("jenkinsci/blueocean")
+    pull_latest_image("shubhambadade07/newtest")
 
     # Run a container from the updated image
-    run_container("jenkinsci/blueocean")
+    run_container("shubhambadade07/newtest")
 
 if __name__ == "__main__":
     main()
