@@ -31,7 +31,7 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t shubhambadade07/new-test:$BUILD_NUMBER 
+        docker build -t shubhambadade07/new-test:$BUILD_NUMBER .
         docker tag shubhambadade07/new-test:$BUILD_NUMBER shubhambadade07/new-test:latest
         docker push shubhambadade07/new-test:latest
         docker push shubhambadade07/new-test:$BUILD_NUMBER
