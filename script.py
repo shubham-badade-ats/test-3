@@ -29,6 +29,8 @@ def main():
     # Set the name of the Docker image and container
     image_name = "shubhambadade07/new-test"
     container_name = "test"
+    # Stop and remove the container by name
+    stop_and_remove_container(container_name)
 
     # Remove the existing Docker image
     remove_old_image(image_name)
@@ -39,8 +41,8 @@ def main():
     # Run a container from the updated image
     run_container(image_name)
 
-    # Stop and remove the container by name
-    stop_and_remove_container(container_name)
+    
+    
 
 if __name__ == "__main__":
     main()
